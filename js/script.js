@@ -24,7 +24,15 @@ const goodVibes = new Vue ({
     methods:{
         deleteInt(index){
             this.things.splice(index, 1);
+        },
+
+        addNewInt(){
+            const newInt = this.newInt.trim();
+            if(newInt){
+                this.things.push({text: newInt, done:false});
+            }
+            this.newInt = '';
         }
     }
-        
+     
 })

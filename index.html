@@ -16,12 +16,19 @@
         <h1 class="text-center py-5">BUONI PROPOSITI 2022</h1>
         <div id="root">
             <div class="container">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" v-model="newInt" @keyup.enter="addNewInt">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2" @click="addNewInt" >Illuditi</button>
+                </div>
+            </div>
+            <div class="container">
                 <ul class="list-group" v-if="things.length">
                     <li v-for="(thing,index) in things"class="list-group-item d-flex justify-content-between">
-                        <div>{{ thing }}</div>
+                        <div>{{ thing.text }}</div>
                         <i class="fas fa-times" @click="deleteInt(index)"></i>
                     </li>
-                  </ul>
+                </ul>
+                <h3 v-else class="text-center mx-5">Senza propositi... Bravo!! Non ti sei illuso</h3>
             </div>
         </div>
     </div>

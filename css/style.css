@@ -7,3 +7,10 @@
 body{
     font-family: sans-serif;
 }
+
+/* SPECIFICS */
+
+#goodintentions{
+    background-color: lightblue;
+    height: 100vh;
+}

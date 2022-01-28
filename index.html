@@ -13,12 +13,13 @@
 </head>
 <body>
     <div id="goodintentions">
-        <h1>BUONI PROPOSITI 2022</h1>
+        <h1 class="text-center py-5">BUONI PROPOSITI 2022</h1>
         <div id="root">
             <div class="container">
-                <ul class="list-group">
-                    <li class="list-group-item">
-
+                <ul class="list-group" v-if="things.length">
+                    <li v-for="(thing,index) in things"class="list-group-item d-flex justify-content-between">
+                        <div>{{ thing }}</div>
+                        <i class="fas fa-times" @click="deleteInt(index)"></i>
                     </li>
                   </ul>
             </div>

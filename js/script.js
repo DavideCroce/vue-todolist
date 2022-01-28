@@ -5,6 +5,7 @@ Vue.config.devtools = true;
 const goodVibes = new Vue ({
     el: '#root',
     data:{
+        newthing: '',
         things: [
             {
                 text: 'Disegnare più spesso',
@@ -20,5 +21,10 @@ const goodVibes = new Vue ({
             }
         ]
     },
+    methods:{
+        deleteInt(index){
+            this.things.splice(index, 1);
+        }
+    }
         
 })

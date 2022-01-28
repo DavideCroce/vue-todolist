@@ -14,3 +14,26 @@ body{
     background-color: lightblue;
     height: 100vh;
 }
+
+h1, h3{
+    font-family: 'Bebas Neue', cursive;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.goodjob{
+    text-decoration: line-through;
+}
+
+.intentions,
+.not-illuded{
+    cursor: pointer;
+}
+
+.btn{
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+}

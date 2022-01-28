@@ -32,6 +32,10 @@ const goodVibes = new Vue ({
                 this.things.push({text: newInt, done:false});
             }
             this.newInt = '';
+        },
+
+        toggleThingNotIlluded(index){
+            this.things[index].done = !this.things[index].done;
         }
     }
      
